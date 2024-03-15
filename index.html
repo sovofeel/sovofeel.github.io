@@ -207,12 +207,26 @@ body {
     max-height: 0;
   }
 
+  .money{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-family: monospace;
+    font-size: 20px;
+    color: #34AE34;
+    font-size: 35px;
+    font-weight: 900;
+  }
+
 	</style>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 </head>
 <body>
+  <div class="money" id="money">
+
+  </div>
 	<div class="description">
 
 	</div>
@@ -227,9 +241,13 @@ body {
 </div>
 		 </div> 
  </div>
+</div>
 	
 
 	<script>
+ 
+
+
 		const items = [
 	{
     "id": 1,
@@ -490,6 +508,14 @@ let stopButton = document.getElementById('buttonStop');
 let reel = document.getElementById('reel');
 let spin;
 
+let money = 100000
+
+
+const moneyElem = document.getElementById('money')
+
+
+moneyElem.innerHTML= `$${money}`
+
 
 items.forEach(item => {
   const divElement = document.createElement('div'); // Создаем новый <div> элемент
@@ -532,6 +558,10 @@ stopButton.addEventListener('click', () => {
 	const findedElem = items.find((elem) => {
 		return elem.id == dataId
 	})
+
+  money += 10000
+
+  moneyElem.innerHTML= `$${money}`
 
 	if (findedElem) {
 		const description = document.getElementsByClassName('description')[0]
@@ -586,5 +616,6 @@ function verticalLoop(elements, speed) {
 }
 
 	</script>
+  
 </body>
 </html>
