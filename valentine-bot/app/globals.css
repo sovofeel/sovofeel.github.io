@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 35px #ff0000, 0 0 40px #ff0000, 0
+      0 50px #ff0000;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000, 0
+      0 100px #ff0000;
+  }
+}
+
+.font-pacifico {
+  font-family: var(--font-pacifico);
+}
+
+.font-lato {
+  font-family: var(--font-lato), sans-serif;
+}
+
