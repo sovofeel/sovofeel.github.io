@@ -68,7 +68,7 @@ export default function Page3() {
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen bg-pink-50 overflow-hidden">
       <LanguageSelector />
-      <AnimatedClouds />
+      {/* <AnimatedClouds /> */}
       <AnimatedGrass />
       <AnimatedSun />
       <AnimatedTiger />
