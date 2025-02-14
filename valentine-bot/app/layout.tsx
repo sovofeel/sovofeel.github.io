@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Pacifico, Lato } from "next/font/google"
 import "./globals.css"
 import type React from "react"
+import { LanguageProvider } from "@/contexts/LanguageContext"
 
 const pacifico = Pacifico({ subsets: ["latin"], weight: "400", variable: "--font-pacifico" })
 const lato = Lato({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-lato" })
@@ -19,7 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${pacifico.variable} ${lato.variable} font-sans`}>{children}</body>
+      <body className={`${pacifico.variable} ${lato.variable} font-sans`}>
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   )
 }
