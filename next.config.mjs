@@ -1,22 +1,24 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  distDir: 'dist',
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  reactStrictMode: true,
+  output: "export", // Export as static HTML
+  distDir: "dist", // Output to dist folder
   images: {
-    unoptimized: true,
+    unoptimized: true, // Required for static export
+    domains: ["placeholder.svg"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "placeholder.svg",
+        port: "",
+        pathname: "**",
+      },
+    ],
   },
-  experimental: {
-    webpackBuildWorker: true,
-    parallelServerBuildTraces: true,
-    parallelServerCompiles: true,
-  },
+  // Handle GitHub Pages path prefix
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || ""
 }
 
 export default nextConfig
