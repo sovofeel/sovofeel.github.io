@@ -1,0 +1,205 @@
+{
+  "en": {
+    "navigation": {
+      "home": "Home",
+      "trial": "Trial",
+      "whyLearn": "Why Learn",
+      "classes": "Classes",
+      "about": "About",
+      "whyChoose": "Why Choose"
+    },
+    "hero": {
+      "headline": "Speak English in 2 months",
+      "description": "Learn with personalized lessons and enjoy speaking English confidently",
+      "button": "Sign up for a trial lesson"
+    },
+    "trialLesson": {
+      "headline": "Sign up for a trial lesson",
+      "description": "We will determine your level and make a learning plan",
+      "button": "Sign up for a free lesson",
+      "freeLesson": {
+        "headline": "What happens during the free lesson?",
+        "steps": [
+          "Determine your language level by 4 aspects",
+          "Practice speaking",
+          "Show you our program and platform",
+          "Create a personalized learning plan"
+        ]
+      }
+    },
+    "whyLearn": {
+      "headline": "We help if you need English for...",
+      "cards": {
+        "work": {
+          "title": "Work",
+          "description": "Improve your communication skills for professional growth."
+        },
+        "income": {
+          "title": "Increasing Income",
+          "description": "Learn English to unlock better job opportunities."
+        },
+        "university": {
+          "title": "University Admission",
+          "description": "Prepare for exams and interviews to get into top universities."
+        },
+        "jobs": {
+          "title": "Job Offers",
+          "description": "Ace your interviews and secure your dream job."
+        },
+        "traveling": {
+          "title": "Traveling",
+          "description": "Speak confidently while exploring the world."
+        },
+        "fears": {
+          "title": "Overcoming Fears",
+          "description": "Gain confidence in speaking English in any situation."
+        }
+      }
+    },
+    "classOptions": {
+      "headline": "Choose a convenient format",
+      "benefits": "Benefits",
+      "groupLessons": {
+        "title": "Group Lessons",
+        "description": "Learn in a small group of like-minded students",
+        "benefits": ["Affordable pricing", "Interactive group activities", "Peer learning opportunities"],
+        "button": "Apply"
+      },
+      "individualLessons": {
+        "title": "Individual Lessons",
+        "description": "One-on-one lessons tailored to your needs",
+        "benefits": ["Personalized attention", "Flexible scheduling", "Customized learning plan"],
+        "button": "Enroll"
+      }
+    },
+    "aboutMe": {
+      "headline": "About Me",
+      "description": "Hi, I'm Albina! I studied in America and passed the TOEFL exam. I've been teaching English for over 6 years and love helping students achieve their goals."
+    },
+    "whyChooseUs": {
+      "headline": "Why Choose Us?",
+      "advantages": [
+        "No rote learning and boring topics. You will apply all your knowledge in class, and homework is provided in a game format, which will help you quickly memorize words or rules without tedious rote learning.",
+        "Complex topics with simple examples. We include gamification in the study of any topics, and complex topics are studied on the example of your favorite series, movies, or TV shows.",
+        "80% of the lesson is speaking. Throughout the class, we talk to the students in English.",
+        "Play games in English to make learning fun and engaging."
+      ]
+    },
+    "modal": {
+      "title": "Sign up for a free lesson",
+      "groupTitle": "Sign up for Group Lessons",
+      "individualTitle": "Sign up for Individual Lessons",
+      "description": "Fill in your details and we'll contact you to schedule your lesson",
+      "nameLabel": "Name",
+      "namePlaceholder": "Enter your name",
+      "phoneLabel": "Phone",
+      "phonePlaceholder": "Enter your phone number",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Enter your email",
+      "submitButton": "Submit",
+      "success": "Thank you! We'll contact you soon."
+    }
+  },
+  "ru": {
+    "navigation": {
+      "home": "Главная",
+      "trial": "Пробный урок",
+      "whyLearn": "Зачем изучать",
+      "classes": "Форматы",
+      "about": "Обо мне",
+      "whyChoose": "Почему мы"
+    },
+    "hero": {
+      "headline": "Говорите по-английски за 2 месяца",
+      "description": "Учитесь с персонализированными уроками и уверенно говорите по-английски",
+      "button": "Записаться на пробный урок"
+    },
+    "trialLesson": {
+      "headline": "Запишитесь на пробный урок",
+      "description": "Мы определим ваш уровень и составим план обучения",
+      "button": "Записаться на бесплатный урок",
+      "freeLesson": {
+        "headline": "Что происходит на бесплатном уроке?",
+        "steps": [
+          "Определим ваш уровень по 4 аспектам",
+          "Практика разговорной речи",
+          "Покажем нашу программу и платформу",
+          "Создадим персональный план обучения"
+        ]
+      }
+    },
+    "whyLearn": {
+      "headline": "Мы поможем, если вам нужен английский для...",
+      "cards": {
+        "work": {
+          "title": "Работы",
+          "description": "Улучшите свои коммуникативные навыки для профессионального роста."
+        },
+        "income": {
+          "title": "Увеличения дохода",
+          "description": "Изучайте английский, чтобы получить доступ к лучшим вакансиям."
+        },
+        "university": {
+          "title": "Поступления в университет",
+          "description": "Подготовьтесь к экзаменам и собеседованиям для поступления в лучшие университеты."
+        },
+        "jobs": {
+          "title": "Предложений о работе",
+          "description": "Успешно пройдите собеседования и получите работу мечты."
+        },
+        "traveling": {
+          "title": "Путешествий",
+          "description": "Говорите уверенно во время путешествий по миру."
+        },
+        "fears": {
+          "title": "Преодоления страхов",
+          "description": "Обретите уверенность в разговоре на английском в любой ситуации."
+        }
+      }
+    },
+    "classOptions": {
+      "headline": "Выберите удобный формат",
+      "benefits": "Преимущества",
+      "groupLessons": {
+        "title": "Групповые занятия",
+        "description": "Учитесь в небольшой группе единомышленников",
+        "benefits": ["Доступная цена", "Интерактивные групповые занятия", "Обучение с другими студентами"],
+        "button": "Подать заявку"
+      },
+      "individualLessons": {
+        "title": "Индивидуальные занятия",
+        "description": "Индивидуальные занятия, адаптированные под ваши нужды",
+        "benefits": ["Персональное внимание", "Гибкий график", "Индивидуальный план обучения"],
+        "button": "Записаться"
+      }
+    },
+    "aboutMe": {
+      "headline": "Обо мне",
+      "description": "Привет, я Альбина! Я училась в Америке и сдала экзамен TOEFL. Я преподаю английский более 6 лет и люблю помогать студентам достигать их целей."
+    },
+    "whyChooseUs": {
+      "headline": "Почему выбирают нас?",
+      "advantages": [
+        "Никакой зубрежки и скучных тем. Вы будете применять все свои знания на уроке, а домашнее задание предоставляется в игровом формате, что поможет вам быстро запомнить слова или правила без утомительной зубрежки.",
+        "Сложные темы на простых примерах. Мы включаем игровые элементы в изучение любых тем, а сложные темы изучаются на примере ваших любимых сериалов, фильмов или телешоу.",
+        "80% урока - это разговорная практика. На протяжении всего занятия мы говорим со студентами на английском.",
+        "Играем в игры на английском, чтобы сделать обучение увлекательным и интересным."
+      ]
+    },
+    "modal": {
+      "title": "Запись на бесплатный урок",
+      "groupTitle": "Запись на групповые занятия",
+      "individualTitle": "Запись на индивидуальные занятия",
+      "description": "Заполните свои данные, и мы свяжемся с вами, чтобы запланировать урок",
+      "nameLabel": "Имя",
+      "namePlaceholder": "Введите ваше имя",
+      "phoneLabel": "Телефон",
+      "phonePlaceholder": "Введите ваш номер телефона",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Введите ваш email",
+      "submitButton": "Отправить",
+      "success": "Спасибо! Мы скоро свяжемся с вами."
+    }
+  }
+}
+
