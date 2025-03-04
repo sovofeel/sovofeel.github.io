@@ -2,7 +2,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  distDir: 'dist',
+  basePath: process.env.PAGES_BASE_PATH,
   eslint: {
     ignoreDuringBuilds: true,
   },
