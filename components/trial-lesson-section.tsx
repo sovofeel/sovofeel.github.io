@@ -3,7 +3,6 @@
 import { useLanguage } from "./language-provider"
 import { Button } from "@/components/ui/button"
 import { Check } from "lucide-react"
-import CurlyGirlStudying from "./svg/curly-girl-studying"
 import { useSignUpModal } from "@/components/sign-up-modal"
 import Image from "next/image";
 import albinaGif  from '../images/albinaGif.gif'

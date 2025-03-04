@@ -6,6 +6,8 @@ import ClassOptionsSection from "@/components/class-options-section"
 import AboutMeSection from "@/components/about-me-section"
 import WhyChooseUsSection from "@/components/why-choose-us-section"
 import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
+
 
 export default function Home() {
   return (
@@ -22,6 +24,7 @@ export default function Home() {
         </div>
         <Navbar />
       </div>
+      <Footer />
     </main>
   )
 }

@@ -98,6 +98,12 @@
       "emailPlaceholder": "Enter your email",
       "submitButton": "Submit",
       "success": "Thank you! We'll contact you soon."
+    },
+    "footer": {
+      "description": "Curly English is a language school dedicated to helping students speak English confidently in just 2 months through personalized lessons and engaging activities.",
+      "quickLinks": "Quick Links",
+      "contact": "Contact Us",
+      "rights": "All rights reserved."
     }
   },
   "ru": {
@@ -199,6 +205,12 @@
       "emailPlaceholder": "Введите ваш email",
       "submitButton": "Отправить",
       "success": "Спасибо! Мы скоро свяжемся с вами."
+    },
+    "footer": {
+      "description": "Curly English - это языковая школа, помогающая студентам уверенно говорить по-английски всего за 2 месяца с помощью персонализированных уроков и увлекательных занятий.",
+      "quickLinks": "Быстрые ссылки",
+      "contact": "Связаться с нами",
+      "rights": "Все права защищены."
     }
   }
 }
