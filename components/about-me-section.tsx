@@ -2,8 +2,8 @@
 
 import { useLanguage } from "./language-provider"
 import Image from "next/image"
-import StatueOfLiberty from "../images/StatueofLiberty.png"
-import albinaImg1  from '../images/albina1.jpg'
+import StatueOfLiberty from "./images/StatueofLiberty.png"
+import albinaImg1  from './images/albina1.jpg'
 
 export default function AboutMeSection() {
   const { t } = useLanguage()

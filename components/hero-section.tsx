@@ -5,8 +5,8 @@ import { useLanguage } from "./language-provider"
 // import NYSkyline from "./svg/ny-skyline"
 import { Button } from "@/components/ui/button"
 import { useSignUpModal } from "@/components/sign-up-modal"
-import albinaImg1  from '../images/albina2.jpg'
-import newYork from '../images/newYork.png'
+import albinaImg1  from './images/albina2.jpg'
+import newYork from './images/newYork.png'
 import Image from "next/image";
 
 

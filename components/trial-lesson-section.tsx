@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Check } from "lucide-react"
 import { useSignUpModal } from "@/components/sign-up-modal"
 import Image from "next/image";
-import albinaGif  from '../images/albinaGif.gif'
+import albinaGif  from './images/albinaGif.gif'
 
 
 export default function TrialLessonSection() {
