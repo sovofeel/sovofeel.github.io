@@ -8,8 +8,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Curly English - Learn English in 2 Months",
-  description: "English language school offering group and individual lessons",
-    generator: 'v0.dev'
+  description: "English language school offering group and individual lessons"
 }
 
 export default function RootLayout({
