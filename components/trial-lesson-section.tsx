@@ -5,6 +5,9 @@ import { Button } from "@/components/ui/button"
 import { Check } from "lucide-react"
 import CurlyGirlStudying from "./svg/curly-girl-studying"
 import { useSignUpModal } from "@/components/sign-up-modal"
+import Image from "next/image";
+import albinaGif  from '../images/albinaGif.gif'
+
 
 export default function TrialLessonSection() {
   const { t } = useLanguage()
@@ -49,7 +52,8 @@ export default function TrialLessonSection() {
                 </ul>
               </div>
               <div className="hidden md:block">
-                <CurlyGirlStudying className="h-auto max-w-[180px]" />
+              <Image style={{"maxHeight": '150px', "width": 'auto', "borderRadius": "50%"}}  alt="Logo" src={albinaGif} />
+                {/* <CurlyGirlStudying className="h-auto max-w-[180px]" /> */}
               </div>
             </div>
           </div>

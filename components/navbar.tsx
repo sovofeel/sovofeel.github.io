@@ -38,7 +38,7 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="hidden lg:block sticky top-20 h-screen py-6 pr-2">
+    <nav className="hidden lg:block sticky top-20 h-screen py-6 pr-2 position-fixed right-0">
       <div className="flex flex-col items-center space-y-2 rounded-l-lg border-l border-t border-b bg-white/80 p-2 backdrop-blur-sm">
         {navItems.map((item) => (
           <a
