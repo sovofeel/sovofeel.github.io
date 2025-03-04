@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label"
 import { useLanguage } from "./language-provider"
 import { Check } from "lucide-react"
 
-type FormType = "general" | "group" | "individual"
+export type FormType = "general" | "group" | "individual"
 
 interface SignUpModalContextType {
   isOpen: boolean

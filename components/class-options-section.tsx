@@ -4,7 +4,7 @@ import { useLanguage } from "./language-provider"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Check } from "lucide-react"
-import { useSignUpModal } from "@/components/sign-up-modal"
+import { FormType, useSignUpModal } from "@/components/sign-up-modal"
 
 export default function ClassOptionsSection() {
   const { t } = useLanguage()
@@ -35,7 +35,7 @@ export default function ClassOptionsSection() {
     },
   ]
 
-  const handleButtonClick = (type: string) => {
+  const handleButtonClick = (type: FormType) => {
     setFormType(type)
     setIsOpen(true)
   }
@@ -73,7 +73,7 @@ export default function ClassOptionsSection() {
               <CardFooter>
                 <Button
                   className="w-full bg-emerald-600 hover:bg-emerald-700 text-white"
-                  onClick={() => handleButtonClick(option.type)}
+                  onClick={() => handleButtonClick(option.type as FormType)}
                 >
                   {option.button}
                 </Button>
