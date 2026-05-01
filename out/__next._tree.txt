@@ -1,0 +1,6 @@
+:HL["/wedding/_next/static/chunks/00~fiw273uxxk.css","style"]
+:HL["/wedding/_next/static/chunks/0tr300756sw_f.css","style"]
+:HL["/wedding/_next/static/media/01e4147cff8141ee-s.p.10ked.7w885.g.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/wedding/_next/static/media/b0947914c9718a1e-s.p.0l.9lak812di~.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/wedding/_next/static/media/f48d461c03e0a8ec-s.p.13m1ppbimti50.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"iPPYe_HfkctgbuDH9jKkh"}

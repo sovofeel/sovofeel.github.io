@@ -1,0 +1,13 @@
+1:"$Sreact.fragment"
+2:I[30312,["/wedding/_next/static/chunks/0ya5kixflpvgt.js","/wedding/_next/static/chunks/0d3tkj33oycf2.js","/wedding/_next/static/chunks/0ouvgrn_nco8o.js"],"BackgroundPattern"]
+3:I[1955,["/wedding/_next/static/chunks/0ya5kixflpvgt.js","/wedding/_next/static/chunks/0d3tkj33oycf2.js","/wedding/_next/static/chunks/0ouvgrn_nco8o.js"],"TitleSection"]
+4:I[1955,["/wedding/_next/static/chunks/0ya5kixflpvgt.js","/wedding/_next/static/chunks/0d3tkj33oycf2.js","/wedding/_next/static/chunks/0ouvgrn_nco8o.js"],"GreetingSection"]
+5:I[1955,["/wedding/_next/static/chunks/0ya5kixflpvgt.js","/wedding/_next/static/chunks/0d3tkj33oycf2.js","/wedding/_next/static/chunks/0ouvgrn_nco8o.js"],"VenueSection"]
+6:I[1955,["/wedding/_next/static/chunks/0ya5kixflpvgt.js","/wedding/_next/static/chunks/0d3tkj33oycf2.js","/wedding/_next/static/chunks/0ouvgrn_nco8o.js"],"ScheduleSection"]
+7:I[1955,["/wedding/_next/static/chunks/0ya5kixflpvgt.js","/wedding/_next/static/chunks/0d3tkj33oycf2.js","/wedding/_next/static/chunks/0ouvgrn_nco8o.js"],"DressCodeSection"]
+8:I[1955,["/wedding/_next/static/chunks/0ya5kixflpvgt.js","/wedding/_next/static/chunks/0d3tkj33oycf2.js","/wedding/_next/static/chunks/0ouvgrn_nco8o.js"],"RequestsSection"]
+9:I[1955,["/wedding/_next/static/chunks/0ya5kixflpvgt.js","/wedding/_next/static/chunks/0d3tkj33oycf2.js","/wedding/_next/static/chunks/0ouvgrn_nco8o.js"],"RSVPSection"]
+a:I[97367,["/wedding/_next/static/chunks/0ya5kixflpvgt.js","/wedding/_next/static/chunks/0d3tkj33oycf2.js"],"OutletBoundary"]
+b:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"relative w-full overflow-x-hidden hide-scrollbar","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{}]]}],[["$","script","script-0",{"src":"/wedding/_next/static/chunks/0ouvgrn_nco8o.js","async":true}]],["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iPPYe_HfkctgbuDH9jKkh"}
+c:null
