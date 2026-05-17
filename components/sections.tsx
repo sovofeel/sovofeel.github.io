@@ -7,24 +7,37 @@ import {
   HeartDecoration,
   LeafDecoration,
   BranchDecoration,
-  WineGlassIcon,
-  FeatherIcon,
   MapPinIcon,
-  FlowerEnvelopeIcon,
-  NoShoutIcon,
-  NoChildrenIcon,
+  BranchDivider,
+  HeartLine,
+  WaveDivider,
 } from "./decorations"
+
+import coupleJPG from '../public/images/couple.jpg'
+
+import brideJPG from '../public/images/bride.jpg'
+import groomJPG from '../public/images/groom.jpg'
+
+function Section({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode
+  className?: string
+}) {
+  return (
+    <section
+      className={`screen-section px-5 max-w-[414px] mx-auto relative ${className}`}
+    >
+      {children}
+    </section>
+  )
+}
 
 // Section 1: Title screen
 export function TitleSection() {
   return (
     <section className="snap-section flex flex-col items-center justify-center px-6 py-8 relative">
-      {/* Decorative elements */}
-      {/* <LeafDecoration className="absolute top-12 left-12 w-12 h-12 text-[#b4b99a] animate-sway opacity-60" />
-      <LeafDecoration className="absolute top-16 right-12 w-10 h-10 text-[#7696a5] animate-float opacity-50 rotate-45" />
-      <LeafDecoration className="absolute bottom-20 left-20 w-8 h-8 text-[#585d46] animate-float opacity-40 -rotate-12" />
-      <LeafDecoration className="absolute bottom-24 right-16 w-10 h-10 text-[#b4b99a] animate-sway opacity-50 rotate-90" />
-       */}
       {/* Names with heart decoration */}
       <div className="text-center mb-6">
         <h1 className="font-serif text-7xl md:text-8xl lg:text-9xl text-[#352b22] leading-tight">
@@ -42,7 +55,7 @@ export function TitleSection() {
       <div className="flex items-center justify-center gap-6 mb-8">
         <div className="w-[132px] h-[132px] md:w-[160px] md:h-[160px] rounded-full overflow-hidden border-2 border-[#d7c0b8] shadow-lg">
           <Image
-            src="/images/groom.jpg"
+            src={groomJPG}
             alt="Арсений"
             width={160}
             height={160}
@@ -51,7 +64,7 @@ export function TitleSection() {
         </div>
         <div className="w-[132px] h-[132px] md:w-[160px] md:h-[160px] rounded-full overflow-hidden border-2 border-[#d7c0b8] shadow-lg">
           <Image
-            src="/images/bride.jpg"
+            src={brideJPG}
             alt="Альбина"
             width={160}
             height={160}
@@ -80,21 +93,19 @@ export function GreetingSection() {
       <BranchDecoration className="w-32 h-6 text-[#b4b99a] mb-6 opacity-60" />
       
       <div className="text-center mb-6 max-w-lg">
-        <h2 className="font-serif text-5xl md:text-6xl text-[#352b22] mb-6">
-          Дорогой гость!
-        </h2>
-        <p className="text-[#543e31] leading-relaxed text-xl md:text-2xl">
-          Мы рады сообщить, что состоится самое главное торжество в нашей жизни — день нашей свадьбы.
-        </p>
-        <p className="text-[#543e31] leading-relaxed text-xl md:text-2xl mt-4">
-          Приглашаем разделить с нами радость этого незабываемого дня.
-        </p>
+      <h2 className="font-serif text-[52px] leading-tight text-[#3B2E24] text-center mb-4">
+        Дорогие родные<br />и друзья!
+      </h2>
+
+      <p className="text-[#5C4A3A] text-base leading-relaxed text-center mb-5 max-w-[330px] mx-auto">
+        Скоро в нашей жизни состоится важное и радостное для нас событие — наша свадьба. Мы будем счастливы, если вы разделите этот день вместе с нами!
+      </p>
       </div>
 
       {/* Couple photo */}
       <div className="w-[280px] h-[280px] md:w-[320px] md:h-[320px] rounded-2xl overflow-hidden shadow-lg border-2 border-[#d3c1ad] mb-5">
         <Image
-          src="/images/couple.jpg"
+          src={coupleJPG}
           alt="Арсений и Альбина"
           width={320}
           height={320}
@@ -114,8 +125,7 @@ export function GreetingSection() {
 // Section 3: Venue
 export function VenueSection() {
   return (
-    <section className="snap-section flex flex-col items-center justify-center px-6 py-8">
-      <LeafDecoration className="w-10 h-10 text-[#585d46] mb-4 animate-sway" />
+    <section className="snap-section flex flex-col items-center justify-center px-6 ">
       
       <h2 className="font-serif text-5xl md:text-6xl text-[#352b22] mb-6 text-center">
         Место проведения
@@ -155,11 +165,13 @@ export function VenueSection() {
 
 // Section 4: Schedule
 export function ScheduleSection() {
-  const schedule = [
-    { time: "15:00", event: "Welcome зона", subtitle: "сбор гостей", icon: HeartDecoration },
-    { time: "18:00", event: "Роспись", subtitle: null, icon: FeatherIcon },
-    { time: "17:00–22:00", event: "Банкет", subtitle: null, icon: WineGlassIcon },
-  ]
+
+  const SCHEDULE = [
+  { time: "15:00", title: "Сбор гостей",        desc: "Встречаемся, обнимаемся и знакомимся" },
+  { time: "18:00", title: "Церемония",           desc: "Тот самый момент заветных «да»" },
+  { time: "17:00", title: "Банкет",              desc: "Танцы, веселье и праздничный ужин" },
+  { time: "23:00", title: "Завершение праздника",desc: "Пьём на брудершафт и провожаем вечер с улыбками" },
+]
 
   return (
     <section className="snap-section flex flex-col items-center justify-center px-6 py-8">
@@ -174,19 +186,16 @@ export function ScheduleSection() {
       </h2>
 
       <div className="w-full max-w-md space-y-4">
-        {schedule.map((item, index) => (
+        {SCHEDULE.map((item, index) => (
           <div
             key={index}
             className="bg-white/60 backdrop-blur-sm rounded-xl p-5 border border-[#d3c1ad] shadow-sm flex items-center gap-5"
           >
-            <div className="w-14 h-14 rounded-full bg-[#f5ebe3] flex items-center justify-center flex-shrink-0">
-              <item.icon className="w-6 h-6 text-[#7696a5]" />
-            </div>
             <div className="flex-1">
               <p className="text-base text-[#7696a5] font-medium">{item.time}</p>
-              <p className="text-[#352b22] font-medium text-xl">{item.event}</p>
-              {item.subtitle && (
-                <p className="text-base text-[#a78d76]">{item.subtitle}</p>
+              <p className="text-[#352b22] font-medium text-xl">{item.title}</p>
+              {item.desc && (
+                <p className="text-base text-[#a78d76]">{item.desc}</p>
               )}
             </div>
           </div>
@@ -198,123 +207,147 @@ export function ScheduleSection() {
 
 // Section 5: Dress code
 export function DressCodeSection() {
-  const colors = [
-    { name: "Пыльно-бирюзовый", hex: "#7696a5" },
-    { name: "Небесно-лавандовый", hex: "#a6c3e3" },
-    { name: "Оливково-коричневый", hex: "#585d46" },
-    { name: "Шалфейный", hex: "#b4b99a" },
-    { name: "Кремово-бежевый", hex: "#d3c1ad" },
-    { name: "Пыльная роза", hex: "#d7c0b8" },
-    { name: "Кофе с молоком", hex: "#a78d76" },
-    { name: "Горький шоколад", hex: "#543e31" },
-    { name: "Тёмный дуб", hex: "#352b22" },
-  ]
+  const PALETTE = [
+  "#A6C3E3", "#A4BCC2", "#6B7F4F",
+  "#9CAF88", "#D2C4B0", "#BEA996",
+  "#8B735B", "#5C4A3A", "#3B2E24",
+]
+
 
   return (
-    <section className="snap-section flex flex-col items-center justify-center px-6 py-8">
-      <h2 className="font-serif text-5xl md:text-6xl text-[#352b22] mb-5 text-center">
+    <Section>
+      <h2 className="font-serif text-[52px] leading-tight text-[#3B2E24] text-center mb-3">
         Дресс-код
       </h2>
 
-      <p className="text-[#543e31] text-center mb-6 max-w-md leading-relaxed text-xl md:text-2xl">
-        Мы будем рады, если в вашей одежде будут присутствовать эти цвета:
+      <p className="text-[#5C4A3A] text-base text-center leading-relaxed mb-6 max-w-[320px] mx-auto">
+        Дорогие, мы очень старались сделать этот праздник особенным и красивым. Будем рады, если вы поддержите атмосферу, выбрав наряды в цветах нашей свадьбы: зелёный, голубой, коричневый.
       </p>
 
-      <div className="grid grid-cols-3 gap-5 max-w-md">
-        {colors.map((color, index) => (
-          <div key={index} className="flex flex-col items-center gap-2">
+      {/* 3×3 palette grid */}
+      <div className="grid grid-cols-3 gap-x-6 gap-y-4 mx-auto">
+        {PALETTE.map((hex, i) => (
+          <div key={i} className="flex flex-col items-center gap-1.5">
             <div
-              className="w-14 h-14 md:w-16 md:h-16 rounded-full border-2 border-white shadow-md"
-              style={{ backgroundColor: color.hex }}
+              className="w-14 h-14 rounded-full shadow-md border-[1.5px] border-white/60"
+              style={{ backgroundColor: hex }}
             />
-            <p className="text-sm md:text-base text-[#6b5c52] text-center leading-tight">
-              {color.name}
-            </p>
           </div>
         ))}
       </div>
 
-      {/* Decorative branches */}
-      <div className="flex items-center gap-4 mt-8">
-        <BranchDecoration className="w-20 h-5 text-[#b4b99a] opacity-50" />
-        <LeafDecoration className="w-5 h-5 text-[#585d46]" />
-        <BranchDecoration className="w-20 h-5 text-[#b4b99a] opacity-50 rotate-180" />
-      </div>
-    </section>
+      <div className="flex items-center justify-center gap-3 mt-6 text-[#A6C3E3]">
+        <BranchDivider className="opacity-45 w-28 h-5" />
+        <HeartLine className="w-5 h-5 opacity-55 flex-shrink-0" />
+        <BranchDivider className="opacity-45 w-28 h-5 rotate-180" />
+      </div> 
+    </Section>
   )
 }
 
-// Section 6: Important requests
-export function RequestsSection() {
-  const requests = [
-    {
-      icon: FlowerEnvelopeIcon,
-      text: "Если хотите подарить цветы, для нас лучшим подарком будет подписка на цветы.",
-    },
-    {
-      icon: NoShoutIcon,
-      text: "Пожалуйста, не кричите «Горько!»",
-    },
-    {
-      icon: NoChildrenIcon,
-      text: "Мы решили провести этот день без детей. Спасибо за понимание.",
-    },
-  ]
 
+const WISHES = [
+  "Мы очень любим ваших деток, но из-за ограниченного пространства этот праздник мы устраиваем в формате +18. Надеемся, вы сможете как следует отдохнуть и повеселиться на нашем празднике \u{1F90D}",
+  "Просим воздержаться от традиционного «Горько!». Нам хочется сохранить атмосферу лёгкости и уюта — обещаем целоваться и без подсказок :)",
+  "Если вы планировали порадовать нас цветами, мы будем рады цветочной подписке — это когда букеты приходят постепенно и радуют нас ещё долго после свадьбы \u{1F90D}",
+]
+
+export function RequestsSection() {
   return (
-    <section className="snap-section flex flex-col items-center justify-center px-6 py-8">
-      <h2 className="font-serif text-4xl md:text-5xl text-[#352b22] mb-8 text-center max-w-lg leading-relaxed">
-        Дорогие гости, будем признательны…
+    <Section>
+      <div className="flex items-center gap-3 mb-5 w-full">
+      </div>
+
+      <h2 className="font-serif text-[52px] leading-tight text-[#3B2E24] text-center mb-6">
+        Пожелания
       </h2>
 
-      <div className="w-full max-w-lg space-y-5">
-        {requests.map((request, index) => (
-          <div
-            key={index}
-            className="bg-white/60 backdrop-blur-sm rounded-xl p-5 border border-[#d3c1ad] shadow-sm"
-          >
-            <div className="flex items-start gap-5">
-              <div className="w-14 h-14 rounded-full bg-[#f5ebe3] flex items-center justify-center flex-shrink-0">
-                <request.icon className="w-7 h-7 text-[#7696a5]" />
-              </div>
-              <p className="text-[#543e31] text-lg md:text-xl leading-relaxed flex-1 pt-2">
-                {request.text}
-              </p>
-            </div>
+      <div className="w-full space-y-0">
+        {WISHES.map((text, i) => (
+          <div key={i}>
+            <p className="text-[#3B2E24] text-base leading-relaxed text-center max-w-[330px] mx-auto py-1">
+              {text}
+            </p>
+            {i < WISHES.length - 1 && (
+              <WaveDivider className="text-[#A6C3E3] opacity-50 my-3" />
+            )}
           </div>
         ))}
       </div>
-    </section>
+
+      <div className="flex items-center justify-center gap-2 mt-6">
+        <HeartLine className="w-4 h-4 text-[#A6C3E3] opacity-50" />
+        <HeartLine className="w-5 h-5 text-[#A6C3E3] animate-pulse-soft" />
+        <HeartLine className="w-4 h-4 text-[#A6C3E3] opacity-50" />
+      </div>
+    </Section>
   )
 }
 
-// Section 7: RSVP Form
+
 export function RSVPSection() {
   return (
-    <section className="snap-section flex flex-col items-center justify-center px-6 py-8">
-      <LeafDecoration className="w-10 h-10 text-[#b4b99a] mb-4 animate-float" />
-      
-      <h2 className="font-serif text-5xl md:text-6xl text-[#352b22] mb-2 text-center">
-        Помогите нам
+    <Section>
+
+      <h2 style={{marginTop: "20px"}} className="font-serif text-[52px] leading-tight text-[#3B2E24] text-center mb-1">
+        Анкета
       </h2>
-      <p className="text-[#6b5c52] mb-6 text-center text-xl">
-        стать немного лучше
+      <p className="text-[#5C4A3A] text-sm text-center mb-5 max-w-[290px] mx-auto leading-relaxed">
+        Будем очень признательны, если вы подтвердите своё присутствие до{" "}
+        <strong className="text-[#3B2E24]">01.07</strong>
       </p>
 
-      <div className="w-full max-w-md bg-white/70 backdrop-blur-sm rounded-2xl p-6 border border-[#d3c1ad] shadow-lg">
+      <div className="w-full rounded-2xl p-5">
         <RSVPForm />
       </div>
+    </Section>
+  )
+}
 
-      <div className="mt-8 text-center">
-        <p className="font-serif text-2xl md:text-3xl text-[#7696a5]">
-          Ждём вас с нетерпением!
+// ─────────────────────────────────────────
+// 8 — Контакты
+// ─────────────────────────────────────────
+export function ContactsSection() {
+  return (
+    <Section>
+      <BranchDivider className="text-[#a6c3e3] opacity-50 mb-5 mx-auto" />
+
+      <h2 className="font-serif text-[52px] leading-tight text-[#3B2E24] text-center mb-5">
+        Контакты
+      </h2>
+
+      <div className="w-full rounded-2xl p-6 text-center space-y-4">
+        <p className="text-[#5C4A3A] text-base leading-relaxed">
+          По всем вопросам в день мероприятия и до него вы можете обратиться к нашему организатору.
         </p>
-        <div className="flex items-center justify-center gap-3 mt-4">
-          <HeartDecoration className="w-5 h-5 text-[#d7c0b8]" />
-          <HeartDecoration className="w-6 h-6 text-[#d7c0b8] animate-float" />
-          <HeartDecoration className="w-5 h-5 text-[#d7c0b8]" />
+
+        <div className="inline-flex flex-col items-center gap-1">
+          <p className="text-[#3B2E24] font-semibold text-lg">Дарья</p>
+          <a
+            href="tel:+79174034123"
+            className="text-[#6B7F4F] font-medium text-xl tracking-wide hover:text-[#3B2E24] transition-colors"
+          >
+            +7 917 403 4123
+          </a>
         </div>
+
+        <WaveDivider className="text-[#A6C3E3] opacity-60" />
+
+        <p className="font-serif text-[32px] leading-tight text-[#6B7F4F]">
+          Очень вас ждём!
+        </p>
+        <p className="text-[#5C4A3A] text-base italic">
+          С любовью, ваши Арсений и Альбина
+        </p>
       </div>
-    </section>
+
+      <div className="flex items-center justify-center gap-3 mt-6">
+        <HeartLine className="w-5 h-5 text-[#A6C3E3] opacity-55" />
+        <HeartLine className="w-7 h-7 text-[#A6C3E3] animate-pulse-soft" />
+        <HeartLine className="w-5 h-5 text-[#A6C3E3] opacity-55" />
+      </div>
+
+      <BranchDivider className="text-[#9CAF88] opacity-50 mt-5 mx-auto rotate-180" />
+    </Section>
   )
 }

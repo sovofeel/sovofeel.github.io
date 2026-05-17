@@ -227,3 +227,99 @@ export function BackgroundPattern() {
     </div>
   )
 }
+
+
+interface Props { className?: string }
+
+// Outline heart
+export function HeartLine({ className }: Props) {
+  return (
+    <svg viewBox="0 0 24 22" fill="none" stroke="currentColor" strokeWidth="1.5"
+      strokeLinecap="round" strokeLinejoin="round" className={cn("w-6 h-6", className)}>
+      <path d="M12 20.5l-1.4-1.27C5.1 14.7 2 11.8 2 8.2 2 5.3 4.3 3 7.2 3c1.7 0 3.3.8 4.8 2.2C13.5 3.8 15.1 3 16.8 3 19.7 3 22 5.3 22 8.2c0 3.6-3.1 6.5-8.6 11.03L12 20.5z" />
+    </svg>
+  )
+}
+
+// Filled small heart
+export function HeartFill({ className }: Props) {
+  return (
+    <svg viewBox="0 0 20 18" fill="currentColor" className={cn("w-4 h-4", className)}>
+      <path d="M10 17L8.8 15.87C4.1 11.6 1 8.9 1 5.5 1 2.8 3.1.7 5.9.7c1.5 0 2.9.7 4.1 1.8C11.2 1.4 12.6.7 14.1.7 16.9.7 19 2.8 19 5.5c0 3.4-3.1 6.1-7.8 10.4L10 17z" />
+    </svg>
+  )
+}
+
+// Leaf
+export function LeafSvg({ className }: Props) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3"
+      strokeLinecap="round" strokeLinejoin="round" className={cn("w-6 h-6", className)}>
+      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+    </svg>
+  )
+}
+
+// Horizontal branch / divider
+export function BranchDivider({ className }: Props) {
+  return (
+    <svg viewBox="0 0 200 20" fill="none" stroke="currentColor" strokeWidth="0.9"
+      strokeLinecap="round" strokeLinejoin="round" className={cn("w-48 h-5", className)}>
+      <path d="M0 10 Q50 7 100 10 Q150 13 200 10" />
+      <path d="M30 10 Q35 5 42 8" />
+      <path d="M60 10 Q65 15 72 12" />
+      <path d="M128 10 Q133 5 140 8" />
+      <path d="M158 10 Q163 15 170 12" />
+    </svg>
+  )
+}
+
+// Map pin
+export function MapPinSvg({ className }: Props) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"
+      strokeLinecap="round" strokeLinejoin="round" className={cn("w-6 h-6", className)}>
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+      <circle cx="12" cy="10" r="3" />
+    </svg>
+  )
+}
+
+// Wavy divider between wish blocks (SVG path)
+export function WaveDivider({ className }: Props) {
+  return (
+    <svg viewBox="0 0 300 16" preserveAspectRatio="none"
+      className={cn("w-full h-4", className)}>
+      <path
+        d="M0 8 Q37.5 0 75 8 Q112.5 16 150 8 Q187.5 0 225 8 Q262.5 16 300 8"
+        fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"
+      />
+    </svg>
+  )
+}
+
+// Zigzag line for schedule cards
+export function ZigzagLine({ className }: Props) {
+  return (
+    <svg viewBox="0 0 300 10" preserveAspectRatio="none"
+      className={cn("w-full h-2.5", className)}>
+      <polyline
+        points="0,7 12,3 24,7 36,3 48,7 60,3 72,7 84,3 96,7 108,3 120,7 132,3 144,7 156,3 168,7 180,3 192,7 204,3 216,7 228,3 240,7 252,3 264,7 276,3 288,7 300,3"
+        fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
+// Tiny twig for palette decoration
+export function TinyTwig({ className }: Props) {
+  return (
+    <svg viewBox="0 0 50 16" fill="none" stroke="currentColor" strokeWidth="0.9"
+      strokeLinecap="round" className={cn("w-12 h-4", className)}>
+      <path d="M0 8 Q25 5 50 8" />
+      <path d="M12 8 Q15 4 19 6" />
+      <path d="M31 8 Q34 12 38 10" />
+    </svg>
+  )
+}

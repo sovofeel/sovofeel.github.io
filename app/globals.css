@@ -89,27 +89,11 @@
 
 /* Snap scrolling */
 html {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
   height: 100%;
 }
 
 body {
   height: 100%;
-}
-
-.snap-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
-
-@media only screen and (max-width: 600px) {
-.snap-section {
-  height: 100vh;
-  height: 100dvh;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
 }
 
 /* Custom animations */

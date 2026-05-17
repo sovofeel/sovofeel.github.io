@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next'
 import { Cormorant_Garamond, Great_Vibes } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const cormorant = Cormorant_Garamond({
@@ -55,7 +54,7 @@ export default function RootLayout({
     <html lang="ru" className="bg-background">
       <body className={`${cormorant.variable} ${greatVibes.variable} font-sans antialiased`}>
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+  
       </body>
     </html>
   )

@@ -6,6 +6,7 @@ import {
   DressCodeSection,
   RequestsSection,
   RSVPSection,
+  ContactsSection,
 } from "@/components/sections"
 import { BackgroundPattern } from "@/components/decorations"
 
@@ -21,6 +22,7 @@ export default function WeddingInvitation() {
       <DressCodeSection />
       <RequestsSection />
       <RSVPSection />
+      <ContactsSection />
     </main>
   )
 }
