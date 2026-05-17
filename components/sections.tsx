@@ -146,7 +146,7 @@ export function VenueSection() {
       {/* Yandex Map iframe */}
       <div className="w-full max-w-xl rounded-xl overflow-hidden border-2 border-[#d3c1ad] shadow-lg">
         <iframe
-          src="https://yandex.ru/map-widget/v1/?ll=55.972844%2C54.735147&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjI0MzM1NxJL0KDQvtGB0YHQuNGPLCDQo9GE0LAsINGD0LvQuNGG0LAg0J3QvtCy0LPQvtGA0L7QtNGB0LrQsNGPLCA1OC8xIgoN7F9gQhVKYVtC&z=16"
+          src="https://yandex.ru/map-widget/v1/?ll=55.870480%2C54.710497&mode=search&ol=geo&z=16"
           width="100%"
           height="280"
           frameBorder="0"

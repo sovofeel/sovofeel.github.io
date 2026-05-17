@@ -7,6 +7,7 @@ export function RSVPForm() {
   const [name,      setName]      = useState("")
   const [attend,    setAttend]    = useState<"yes" | "no" | "">("")
   const [phone,     setPhone]     = useState("")
+  const [whish,     setWhish]     = useState("")
   const [submitting, setSubmitting] = useState(false)
   const [submitted,  setSubmitted]  = useState(false)
   const [error,      setError]      = useState("")
@@ -22,13 +23,14 @@ export function RSVPForm() {
     setSubmitting(true)
     try {
       const payload = {
+        whish: whish.trim(),
         name:         name.trim(),
         attend,
         phone:        phone.trim(),
         submitted_at: new Date().toISOString(),
       }
 
-  const proxyUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://script.google.com/macros/s/AKfycbwh_bIyJMF1b5SVKe4jRWf-_pTwf4QzdaEKAvPDU1jEchFfFpBk-OnLHAUUnL6Gl71A2A/exec');
+  const proxyUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://script.google.com/macros/s/AKfycbx-TV91eZftXgNTa2IaRPaT01Kr-LxeIvgpmQk_4pWAz20JnE9gHlbqC47vOPU_THKcXg/exec');
 
       const res = await fetch(proxyUrl, {
         method:  "POST",
@@ -137,6 +139,16 @@ export function RSVPForm() {
           {error}
         </p>
       )}
+
+        <div>
+        <label className={labelCls}>Пожелания</label>
+        <textarea
+          value={whish}
+          onChange={e => setWhish(e.target.value)}
+          placeholder="Хотим пожелать..."
+          className={inputCls}
+        />
+      </div>
 
       {/* Submit */}
       <button
