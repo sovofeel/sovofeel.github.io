@@ -26,10 +26,9 @@ export function RSVPForm() {
         name:         name.trim(),
         attend,
         phone:        phone.trim(),
-        social:       social.trim(),
         submitted_at: new Date().toISOString(),
       }
-      const res = await fetch("/api/rsvp", {
+      const res = await fetch("https://script.google.com/macros/s/AKfycbxEiWjJVQwNAoRNgvo8j1_tJoTEbDkthFFmts5Iye8CqkN3GUohB5ZhfTspTNbp91Ri-w/exec", {
         method:  "POST",
         headers: { "Content-Type": "application/json" },
         body:    JSON.stringify(payload),
@@ -47,7 +46,7 @@ export function RSVPForm() {
     return (
       <div className="text-center py-8 flex flex-col items-center gap-3">
         <div className="w-14 h-14 rounded-full bg-[#9CAF88]/30 flex items-center justify-center">
-          <svg className="w-7 h-7 text-[#6B7F4F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-7 h-7 text-[#506137]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
           </svg>
         </div>
@@ -60,10 +59,10 @@ export function RSVPForm() {
   }
 
   const inputCls = cn(
-    "w-full px-4 py-3 rounded-2xl border border-[#6b7f4f]",
+    "w-full px-4 py-3 rounded-2xl border border-[#506137]",
     "bg-transparent text-[#3B2E24] text-base",
     "placeholder:text-[#5C4A3A] focus:outline-none",
-    "focus:ring-2 focus:ring-[#6b7f4f]/50 focus:border-transparent",
+    "focus:ring-2 focus:ring-[#506137]/50 focus:border-transparent",
     "transition-all"
   )
 
@@ -99,16 +98,16 @@ export function RSVPForm() {
               className={cn(
                 "flex items-center gap-3 px-4 py-3 rounded-2xl border text-left transition-all duration-200",
                 attend === opt.val
-                  ? "border-[#6B7F4F] bg-[#6B7F4F]/10 text-[#3B2E24]"
-                  : "border-[#6b7f4f] bg-transparent text-[#5C4A3A] hover:border-[#6B7F4F]"
+                  ? "border-[#506137] bg-[#506137]/10 text-[#3B2E24]"
+                  : "border-[#506137] bg-transparent text-[#5C4A3A] hover:border-[#506137]"
               )}
             >
               <div className={cn(
                 "w-4 h-4 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all",
-                attend === opt.val ? "border-[#6B7F4F]" : "border-[#6b7f4f]"
+                attend === opt.val ? "border-[#506137]" : "border-[#506137]"
               )}>
                 {attend === opt.val && (
-                  <div className="w-2 h-2 rounded-full bg-[#6B7F4F]" />
+                  <div className="w-2 h-2 rounded-full bg-[#506137]" />
                 )}
               </div>
               <span className="text-base">{opt.label}</span>
@@ -129,21 +128,6 @@ export function RSVPForm() {
         />
       </div>
 
-      {/* Social */}
-      <div>
-        <label className={labelCls}>
-          Соцсети{" "}
-          <span className="text-[#BEA996] font-normal normal-case tracking-normal">(необязательно)</span>
-        </label>
-        <input
-          type="text"
-          value={social}
-          onChange={e => setSocial(e.target.value)}
-          placeholder="@nickname или ссылка"
-          className={inputCls}
-        />
-      </div>
-
       {/* Error */}
       {error && (
         <p className="text-red-600 text-sm text-center bg-red-50/60 rounded-xl px-3 py-2">
@@ -156,9 +140,9 @@ export function RSVPForm() {
         type="submit"
         disabled={submitting}
         className={cn(
-          "w-full py-3.5 rounded-2xl border-2 border-[#6b7f4f]",
+          "w-full py-3.5 rounded-2xl border-2 border-[#506137]",
           "text-[#3B2E24] font-semibold text-base tracking-wide",
-          "transition-all duration-300 hover:bg-[#6b7f4f] hover:text-white",
+          "transition-all duration-300 hover:bg-[#506137] hover:text-white",
           "active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
         )}
       >

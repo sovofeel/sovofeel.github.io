@@ -44,7 +44,7 @@ export function TitleSection() {
           Арсений
         </h1>
         <div className="flex items-center justify-center my-3">
-          <HeartDecoration className="w-8 h-8 text-[#d7c0b8] animate-float" />
+          <HeartDecoration className="w-8 h-8 text-[#a6c3e3] animate-float" />
         </div>
         <h1 className="font-serif text-7xl md:text-8xl lg:text-9xl text-[#352b22] leading-tight">
           Альбина
@@ -52,7 +52,7 @@ export function TitleSection() {
       </div>
 
       {/* Photos */}
-      <div className="flex items-center justify-center gap-6 mb-8">
+      <div className="flex items-center justify-center gap-2 mb-8">
         <div className="w-[132px] h-[132px] md:w-[160px] md:h-[160px] rounded-full overflow-hidden border-2 border-[#d7c0b8] shadow-lg">
           <Image
             src={groomJPG}
@@ -74,13 +74,13 @@ export function TitleSection() {
       </div>
 
       {/* Countdown */}
-        <div className="mt-5 w-full rounded-2xl px-4 py-3 border border-[#A6C3E3]">
+        <div className="mt-5  rounded-2xl px-4 py-3 border border-[#d7c0b8]">
           <MiniCalendar />
         </div>
 
       {/* Date */}
       <p className="mt-2 text-xl md:text-2xl tracking-widest text-[#6b5c52] font-light">
-        23.07.2026 / 18:00
+        23.07.2026
       </p>
     </section>
   )
@@ -168,7 +168,7 @@ export function ScheduleSection() {
 
   const SCHEDULE = [
   { time: "15:00", title: "Сбор гостей",        desc: "Встречаемся, обнимаемся и знакомимся" },
-  { time: "18:00", title: "Церемония",           desc: "Тот самый момент заветных «да»" },
+  { time: "16:00", title: "Церемония",           desc: "Тот самый момент заветных «да»" },
   { time: "17:00", title: "Банкет",              desc: "Танцы, веселье и праздничный ужин" },
   { time: "23:00", title: "Завершение праздника",desc: "Пьём на брудершафт и провожаем вечер с улыбками" },
 ]
@@ -208,7 +208,7 @@ export function ScheduleSection() {
 // Section 5: Dress code
 export function DressCodeSection() {
   const PALETTE = [
-  "#A6C3E3", "#A4BCC2", "#6B7F4F",
+  "#A6C3E3", "#A4BCC2", "#506137",
   "#9CAF88", "#D2C4B0", "#BEA996",
   "#8B735B", "#5C4A3A", "#3B2E24",
 ]
@@ -325,7 +325,7 @@ export function ContactsSection() {
           <p className="text-[#3B2E24] font-semibold text-lg">Дарья</p>
           <a
             href="tel:+79174034123"
-            className="text-[#6B7F4F] font-medium text-xl tracking-wide hover:text-[#3B2E24] transition-colors"
+            className="text-[#506137] font-medium text-xl tracking-wide hover:text-[#3B2E24] transition-colors"
           >
             +7 917 403 4123
           </a>
@@ -333,21 +333,13 @@ export function ContactsSection() {
 
         <WaveDivider className="text-[#A6C3E3] opacity-60" />
 
-        <p className="font-serif text-[32px] leading-tight text-[#6B7F4F]">
+        <p className="font-serif text-[32px] leading-tight text-[#506137]">
           Очень вас ждём!
         </p>
         <p className="text-[#5C4A3A] text-base italic">
           С любовью, ваши Арсений и Альбина
         </p>
       </div>
-
-      <div className="flex items-center justify-center gap-3 mt-6">
-        <HeartLine className="w-5 h-5 text-[#A6C3E3] opacity-55" />
-        <HeartLine className="w-7 h-7 text-[#A6C3E3] animate-pulse-soft" />
-        <HeartLine className="w-5 h-5 text-[#A6C3E3] opacity-55" />
-      </div>
-
-      <BranchDivider className="text-[#9CAF88] opacity-50 mt-5 mx-auto rotate-180" />
     </Section>
   )
 }

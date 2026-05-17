@@ -44,7 +44,7 @@ export function MiniCalendar() {
             <div key={i} className="flex items-center justify-center h-7">
               {isWedding ? (
                 <div className="relative w-7 h-7 flex items-center justify-center">
-                  <div className="absolute inset-0 rounded-full bg-[#6B7F4F]" />
+                  <div className="absolute inset-0 rounded-full bg-[#506137]" />
                   <span className="relative text-white text-[11px] font-bold z-10">{day}</span>
                 </div>
               ) : (
@@ -59,8 +59,8 @@ export function MiniCalendar() {
 
       {/* Legend */}
       <div className="flex items-center justify-center gap-1.5 mt-2">
-        <div className="w-3 h-3 rounded-full bg-[#6B7F4F]" />
-        <p className="text-[11px] text-[#6B7F4F] font-semibold tracking-wide">
+        <div className="w-3 h-3 rounded-full bg-[#506137]" />
+        <p className="text-[11px] text-[#506137] font-semibold tracking-wide">
           23 — День свадьбы
         </p>
       </div>
