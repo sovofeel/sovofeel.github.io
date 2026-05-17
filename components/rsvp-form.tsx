@@ -62,7 +62,7 @@ export function RSVPForm() {
   const inputCls = cn(
     "w-full px-4 py-3 rounded-2xl border border-[#6b7f4f]",
     "bg-transparent text-[#3B2E24] text-base",
-    "placeholder:text-[#BEA996] focus:outline-none",
+    "placeholder:text-[#5C4A3A] focus:outline-none",
     "focus:ring-2 focus:ring-[#6b7f4f]/50 focus:border-transparent",
     "transition-all"
   )

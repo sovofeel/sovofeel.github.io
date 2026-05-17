@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import { Countdown } from "./countdown"
 import { RSVPForm } from "./rsvp-form"
 import {
   HeartDecoration,
@@ -17,6 +16,7 @@ import coupleJPG from '../public/images/couple.jpg'
 
 import brideJPG from '../public/images/bride.jpg'
 import groomJPG from '../public/images/groom.jpg'
+import { MiniCalendar } from "./mini-calendar"
 
 function Section({
   children,
@@ -74,12 +74,12 @@ export function TitleSection() {
       </div>
 
       {/* Countdown */}
-      <div className="mb-8">
-        <Countdown />
-      </div>
+        <div className="mt-5 w-full rounded-2xl px-4 py-3 border border-[#A6C3E3]">
+          <MiniCalendar />
+        </div>
 
       {/* Date */}
-      <p className="text-xl md:text-2xl tracking-widest text-[#6b5c52] font-light">
+      <p className="mt-2 text-xl md:text-2xl tracking-widest text-[#6b5c52] font-light">
         23.07.2026 / 18:00
       </p>
     </section>
@@ -89,7 +89,7 @@ export function TitleSection() {
 // Section 2: Greeting and couple photo
 export function GreetingSection() {
   return (
-    <section className="snap-section flex flex-col items-center justify-center px-6 py-8">
+    <section className="snap-section flex flex-col items-center justify-center px-6 py-2">
       <BranchDecoration className="w-32 h-6 text-[#b4b99a] mb-6 opacity-60" />
       
       <div className="text-center mb-6 max-w-lg">
