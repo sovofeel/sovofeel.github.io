@@ -28,7 +28,10 @@ export function RSVPForm() {
         phone:        phone.trim(),
         submitted_at: new Date().toISOString(),
       }
-      const res = await fetch("https://script.google.com/macros/s/AKfycbxEiWjJVQwNAoRNgvo8j1_tJoTEbDkthFFmts5Iye8CqkN3GUohB5ZhfTspTNbp91Ri-w/exec", {
+
+  const proxyUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://script.google.com/macros/s/AKfycbxEiWjJVQwNAoRNgvo8j1_tJoTEbDkthFFmts5Iye8CqkN3GUohB5ZhfTspTNbp91Ri-w/exe');
+
+      const res = await fetch(proxyUrl, {
         method:  "POST",
         headers: { "Content-Type": "application/json" },
         body:    JSON.stringify(payload),
