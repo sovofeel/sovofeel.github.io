@@ -7,7 +7,6 @@ export function RSVPForm() {
   const [name,      setName]      = useState("")
   const [attend,    setAttend]    = useState<"yes" | "no" | "">("")
   const [phone,     setPhone]     = useState("")
-  const [social,    setSocial]    = useState("")
   const [submitting, setSubmitting] = useState(false)
   const [submitted,  setSubmitted]  = useState(false)
   const [error,      setError]      = useState("")
@@ -29,7 +28,7 @@ export function RSVPForm() {
         submitted_at: new Date().toISOString(),
       }
 
-  const proxyUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://script.google.com/macros/s/AKfycbxEiWjJVQwNAoRNgvo8j1_tJoTEbDkthFFmts5Iye8CqkN3GUohB5ZhfTspTNbp91Ri-w/exe');
+  const proxyUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://script.google.com/macros/s/AKfycbwh_bIyJMF1b5SVKe4jRWf-_pTwf4QzdaEKAvPDU1jEchFfFpBk-OnLHAUUnL6Gl71A2A/exec');
 
       const res = await fetch(proxyUrl, {
         method:  "POST",
@@ -122,6 +121,7 @@ export function RSVPForm() {
       {/* Phone */}
       <div>
         <label className={labelCls}>Номер телефона</label>
+        
         <input
           type="tel"
           value={phone}
