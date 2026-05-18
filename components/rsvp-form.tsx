@@ -141,7 +141,7 @@ export function RSVPForm() {
       )}
 
         <div>
-        <label className={labelCls}>Пожелания</label>
+        <label className={labelCls}>Пожелания / Аллергии</label>
         <textarea
           value={whish}
           onChange={e => setWhish(e.target.value)}
