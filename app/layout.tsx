@@ -17,19 +17,18 @@ const greatVibes = Great_Vibes({
 export const metadata: Metadata = {
   title: 'Арсений и Альбина — Приглашение на свадьбу',
   description: 'Мы рады пригласить вас на нашу свадьбу 23 июля 2026 года',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/favicon-32x32.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/favicon-32x32.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: '/favicon.ico',
         type: 'image/svg+xml',
       },
     ],
